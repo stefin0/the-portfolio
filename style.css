@@ -40,11 +40,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: red; */
+  background-color: rgb(216, 216, 216);
 }
 
-#logo {
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo {
   font-size: 2rem;
+}
+
+.logo:hover {
+  text-decoration: none;
 }
 
 .mobile-nav-toggle {
@@ -55,10 +68,6 @@ header {
   display: flex;
   gap: 2rem;
   list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 @media (max-width: 35em) {
@@ -117,15 +126,37 @@ a {
   border: 1px solid red;
 } */
 
-#home > img {
-  width: 75%;
+.image {
+  width: 100%;
   max-width: 25rem;
 }
 
-h1 {
+.image .card {
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* Titles */
+.title {
   text-align: center;
+}
+
+.title.t1 {
   font-size: 2rem;
   font-weight: 900;
+}
+
+.title.t2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.title.t3 {
+  font-size: 1.25rem;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 .blue-button {
@@ -149,13 +180,53 @@ h1 {
   width: 1rem;
 }
 
-#projects {
-  background-color: rgb(0, 0, 0);
+.projects {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding: 2rem 0 2rem 0;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-card {
+  background-size: cover;
+  margin: 0 1rem 0 1rem;
+  padding: 2rem;
+  aspect-ratio: auto 309 / 450;
+  border-radius: 1rem;
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project-card.msf {
+  background-image: url(/Assets/msf-header.png);
   color: white;
 }
 
-h2 {
+.project-card.swf {
+  background-image: url(/Assets/swf-isf.png);
+  color: white;
+}
+
+.project-card:hover {
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+  text-decoration: none;
+}
+
+footer {
+  position: sticky;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
+  color: white;
+  background-color: red;
+  bottom: 0;
 }
