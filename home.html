@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Stefin Racho's Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <a href="home.html" class="logo">STEFIN</a>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          class="primary-navigation"
+          data-visible="false"
+        >
+          <li><a id="homeLink" href="home.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <img
+        src="/Assets/headshot.png"
+        alt="Photo of Stefin Racho"
+        class="image"
+      />
+      <div class="cta">
+        <h1 class="title t1">
+          Hello! 👋<br />
+          I'm Stefin Racho,<br />
+          a web developer.
+        </h1>
+        <a href="about.html"
+          ><button class="blue-button">Learn more about me ›</button></a
+        >
+      </div>
+      <div class="download">
+        <a href="/Assets/stefin-racho-resume-1.pdf" download>
+          Download My Resume
+          <img src="/Assets/download.svg" alt="Download icon" />
+        </a>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2 class="title t2">Personal Projects</h2>
+      <div class="cards">
+        <!-- Merced Science Fair -->
+        <a href="mcf.html" class="project-card msf">
+          <h3 class="title t3">mercedsciencefair.com</h3>
+          <p>
+            A React.js website developed collaboratively to promote the Merced
+            College Science Fair.
+          </p>
+        </a>
+
+        <!-- First Hackathon Project -->
+        <a href="fhp.html" class="project-card swf">
+          <h3 class="title t3">First Hackathon Project</h3>
+          <p>Stefin's first time competing in a Hackathon!</p>
+        </a>
+      </div>
+    </section>
+    <footer>
+      <p>Stefin is currently working on this website. Stay tuned!</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- Citations -->
+<!-- https://youtu.be/HbBMp6yUXO0 -->
