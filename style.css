@@ -52,6 +52,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.link {
+  color: rgb(79 70 229);
+}
+
 .logo {
   font-size: 2rem;
 }
@@ -122,13 +126,14 @@ a:hover {
   margin: 2rem 0;
 }
 
-/* #home > * {
-  border: 1px solid red;
-} */
-
+/* Images */
 .image {
   width: 100%;
   max-width: 25rem;
+}
+
+.image.article {
+  max-width: 65ch;
 }
 
 .image .card {
@@ -229,4 +234,29 @@ footer {
   color: white;
   background-color: red;
   bottom: 0;
+}
+
+/* Paragraph Information */
+.p-info {
+  max-width: 65ch;
+}
+
+.center {
+  width: 100%;
+}
+
+@media (min-width: 48rem) {
+  .center {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+/* Utility Classes */
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.left {
+  text-align: left;
 }
