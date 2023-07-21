@@ -136,6 +136,10 @@ a:hover {
   max-width: 65ch;
 }
 
+.double-image {
+  max-width: 50%;
+}
+
 .image .card {
   object-fit: cover;
   border-radius: 1rem;
@@ -259,4 +263,8 @@ footer {
 
 .left {
   text-align: left;
+}
+
+.flex {
+  display: flex;
 }
